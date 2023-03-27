@@ -21,7 +21,11 @@ let showSlide = (slideNumber) => {
 };
 
 let showNextSlide = () => {
-    activeSlideNumber = activeSlideNumber + 1;
+    if(activeSlideNumber === 3) {
+        activeSlideNumber = 1;
+    } else {
+        activeSlideNumber = activeSlideNumber +1;
+    };
     showSlide(activeSlideNumber);
 };
 
