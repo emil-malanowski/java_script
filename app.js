@@ -15,21 +15,19 @@ let hideActiveSlide = () => {
 };
 
 let showSlide = (slideNumber) => {
+    hideActiveSlide();
     document.querySelector('#slide'+slideNumber).classList.add('active');
 };
 
 let showSlide1 = () => {
-    hideActiveSlide();
     showSlide(1);
 };
 let showSlide2 = () => {
-    hideActiveSlide();
     showSlide(2);
 };
 let showSlide3 = () => {
-    hideActiveSlide();
     showSlide(3);
-}
+};
 dot1.addEventListener('click', showSlide1);
 dot2.addEventListener('click', showSlide2);
 dot3.addEventListener('click', showSlide3);
