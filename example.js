@@ -1,11 +1,7 @@
-let isBiggerThan10 = (number) => {
-    if(number>10) {
-        console.log("Liczba jest większa niż 10");
-    }
-    else {
-        console.log("Liczba nie jest większa niż 10 ");
-    }
+let nOddNumbers = (n) => {
+    console.log(2*i-1);
 };
 
-isBiggerThan10(20);
-isBiggerThan10(5);
+for(let i = 1; i <= 5; i++) {
+    nOddNumbers(i);
+};
